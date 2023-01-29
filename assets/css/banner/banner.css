@@ -1,0 +1,7 @@
+.banner {
+  align-items: center;
+  background: url(./../../img/banner-image.png) no-repeat center / cover;
+  display: flex;
+  height: 352px;
+  justify-content: center;
+}
