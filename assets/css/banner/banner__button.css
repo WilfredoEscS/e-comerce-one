@@ -1,0 +1,8 @@
+.banner__button {
+  color: var(--banner-text-color);
+  padding: 1rem 2rem;
+  background-color: var(--main-color);
+  text-decoration: none;
+  width: fit-content;
+  font-weight: 400;
+}

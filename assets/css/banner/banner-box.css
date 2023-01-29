@@ -1,5 +1,7 @@
 .banner__box {
+  display: flex;
   color: var(--banner-color-font);
+  flex-direction: column;
   font-family: var(--banner-text-font);
   font-weight: 700;
   width: 80vw;
