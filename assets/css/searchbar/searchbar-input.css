@@ -1,0 +1,12 @@
+.searchbar__input {
+  border: none;
+  background: none;
+  color: var(--text-color);
+  font-family: var(--text-font);
+  outline: none;
+  width: 90%;
+}
+
+.searchbar__input::placeholder {
+  color: var(--placelabel-color);
+}

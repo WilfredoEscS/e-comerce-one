@@ -1,0 +1,11 @@
+@import url(./header-box.css);
+@import url(./header-logo.css);
+@import url(./header-loginbtn.css);
+
+.header {
+  align-items: center;
+  display: flex;
+  height: 15vh;
+  padding: 0 10%;
+  justify-content: space-between;
+}

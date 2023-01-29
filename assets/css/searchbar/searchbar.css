@@ -1,0 +1,12 @@
+@import url(./searchbar-icon.css);
+@import url(./searchbar-input.css);
+
+.searchbar {
+  background-color: #f5f5f5;
+  border-radius: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 4rem;
+  padding: 0.5rem 1rem;
+  width: 25vw;
+}
