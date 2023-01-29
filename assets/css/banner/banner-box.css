@@ -1,8 +1,10 @@
 .banner__box {
-  display: flex;
   color: var(--banner-color-font);
+  display: flex;
   flex-direction: column;
   font-family: var(--banner-text-font);
   font-weight: 700;
+  height: 80%;
+  justify-content: end;
   width: 80vw;
 }
