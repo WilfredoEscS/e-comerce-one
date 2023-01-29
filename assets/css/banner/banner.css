@@ -1,3 +1,6 @@
+@import url(./banner-box.css);
+@import url(./banner-subtitle.css);
+@import url(./banner-title.css);
 .banner {
   align-items: center;
   background: url(./../../img/banner-image.png) no-repeat center / cover;

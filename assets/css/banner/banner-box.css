@@ -1,0 +1,6 @@
+.banner__box {
+  color: var(--banner-color-font);
+  font-family: var(--banner-text-font);
+  font-weight: 700;
+  width: 80vw;
+}
