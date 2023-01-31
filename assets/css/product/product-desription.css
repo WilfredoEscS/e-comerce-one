@@ -1,0 +1,7 @@
+.product__description {
+  margin: 0;
+  width: fit-content;
+  font-weight: 500;
+  font-family: var(--text-font);
+  color: var(--text-color);
+}
