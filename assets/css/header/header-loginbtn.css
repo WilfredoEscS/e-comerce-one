@@ -1,5 +1,6 @@
 .header__loginbtn {
   border: 1px solid var(--main-color);
+  color: var(--main-color);
   padding: 1rem 4.5rem;
   font-family: var(--text-font);
   text-decoration: none;
