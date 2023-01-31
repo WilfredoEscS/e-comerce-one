@@ -1,11 +1,11 @@
-.section__link {
+.link {
   color: var(--main-color);
   font-family: var(--text-font);
   font-weight: 700;
   text-decoration: none;
 }
 
-.section__link--arrow {
-  background: url(./../../img/arrow.svg) no-repeat right / contain;
+.link--rightarrow {
+  background: url(./../../img/rightarrow.svg) no-repeat right / contain;
   padding-right: 2rem;
 }
