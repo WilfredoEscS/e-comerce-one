@@ -1,5 +1,5 @@
 .banner__box {
-  color: var(--banner-color-font);
+  color: var(--banner-text-color);
   display: flex;
   flex-direction: column;
   font-family: var(--banner-text-font);
