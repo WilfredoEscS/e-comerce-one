@@ -1,0 +1,10 @@
+@import url(./product-desription.css);
+@import url(./product-image.css);
+@import url(./product-price.css);
+
+.product {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem 0;
+  width: 165px;
+}
