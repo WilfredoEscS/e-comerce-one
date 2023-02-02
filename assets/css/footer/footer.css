@@ -1,9 +1,10 @@
 @import url(./footer-box.css);
 @import url(./footer-contactus.css);
+@import url(./footer-dev-info.css);
 
 .footer {
+  align-items: center;
   background-color: var(--footer-bgcolor);
   display: flex;
-  justify-content: center;
-  padding: 3rem 0;
+  flex-direction: column;
 }
