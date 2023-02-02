@@ -1,0 +1,7 @@
+.contactform__title {
+  font-family: var(--text-font);
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0;
+}

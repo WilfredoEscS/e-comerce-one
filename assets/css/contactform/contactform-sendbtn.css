@@ -1,0 +1,9 @@
+.contactform__sendbtn {
+  width: fit-content;
+  padding: 1rem 1.5rem;
+  font-family: var(--text-font);
+  background-color: var(--main-color);
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+}
