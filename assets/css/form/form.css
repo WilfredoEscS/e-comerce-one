@@ -1,0 +1,12 @@
+@import url(./form-field.css);
+@import url(./form-label.css);
+@import url(./form-input.css);
+@import url(./form-sendbtn.css);
+@import url(./form-title.css);
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1em 0;
+}
