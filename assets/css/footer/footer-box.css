@@ -1,0 +1,6 @@
+.footer__box {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  padding: 3rem 0;
+}

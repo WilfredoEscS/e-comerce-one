@@ -1,10 +1,11 @@
 :root {
   --banner-text-color: #ffffff;
   --banner-text-font: "Raleway", sans-serif;
+  --footer-bgcolor: #eaf2fd;
   --main-color: #2a7ae4;
   --placelabel-color: #a2a2a2;
   --section-title-color: #464646;
-  --title-font: "Raleway", sans-serif;
   --text-font: "Raleway", sans-serif;
   --text-color: #464646;
+  --title-font: "Raleway", sans-serif;
 }

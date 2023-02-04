@@ -1,0 +1,12 @@
+.contactform__label {
+  background-color: #fff;
+  color: var(--placelabel-color);
+  font-family: var(--text-font);
+  left: 1rem;
+  padding: 0.25rem;
+  pointer-events: none;
+  position: absolute;
+  top: 1rem;
+  transition: all 0.5s;
+  width: calc(100% - 3rem);
+}

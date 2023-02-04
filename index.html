@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="/assets/css/link/link.css">
     <link rel="stylesheet" href="./assets/css/section/section.css">
     <link rel="stylesheet" href="./assets/css/product/product.css">
+    <link rel="stylesheet" href="./assets/css/footer/footer.css">
+    <link rel="stylesheet" href="./assets/css/navlist/navlist.css">
+    <link rel="stylesheet" href="./assets/css//contactform/contactform.css">
     <title>AluraGeek</title>
 </head>
 
@@ -173,6 +176,41 @@
             </article>
         </section>
     </main>
+    <footer class="footer">
+        <div class="footer__box">
+            <img src="./assets/img/logo-header.svg" alt="Logo de AluraGeek" class="header__logo">
+            <nav class="footer__navegation">
+                <ul class="navlist">
+                    <li class="navlist__item"><a href="#" class="link link--dark">Quienes somos</a></li>
+                    <li class="navlist__item"><a href="#" class="link link--dark">Política de privacidad</a></li>
+                    <li class="navlist__item"><a href="#" class="link link--dark">Programa de fidelidad</a></li>
+                    <li class="navlist__item"><a href="#" class="link link--dark">Nuestras tiendas</a></li>
+                    <li class="navlist__item"><a href="#" class="link link--dark">Quiero ser franquiciado</a></li>
+                    <li class="navlist__item"><a href="#" class="link link--dark">Anuncie aquí</a></li>
+                </ul>
+            </nav>
+            <div class="footer__contactus">
+                <form action="" class="contactform">
+                    <h3 class="contactform__title">Hable con nosotros</h3>
+                    <div class="contactform__field">
+                        <input type="text" name="name" id="" class="contactform__input" required>
+                        <label class="contactform__label" for="name">Nombre</label>
+                    </div>
+                    <div class="contactform__field">
+                        <textarea name="message" id="" cols="30" rows="3" class="contactform__input"
+                            required></textarea>
+                        <label class="contactform__label" for="message">Escribe tu mensaje</label>
+
+                    </div>
+                    <input type="submit" value="Enviar Mensaje" class="contactform__sendbtn">
+                </form>
+            </div>
+        </div>
+        <div class="footer__dev-info">
+            <p>Desarrolado por Wilfredo Escobar</br>2022</p>
+
+        </div>
+    </footer>
 
 </body>
 
