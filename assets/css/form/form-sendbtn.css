@@ -7,3 +7,6 @@
   border-radius: 5px;
   border: none;
 }
+.form__sendbtn--long {
+  width: 100%;
+}
