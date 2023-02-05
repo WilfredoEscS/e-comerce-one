@@ -1,0 +1,18 @@
+.edit__button {
+  background: url(./../../img/edit-icon.svg) no-repeat center / contain;
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: ;
+}
+.trash__button {
+  background: url(./../../img/trash-icon.svg) no-repeat center / contain;
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  top: 0.5rem;
+  right: 2.5rem;
+  cursor: pointer;
+}
