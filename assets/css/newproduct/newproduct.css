@@ -1,0 +1,9 @@
+@import url(./newproduct-box.css);
+
+.new-product {
+  align-items: center;
+  background-color: var(--main-bgcolor);
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0;
+}
