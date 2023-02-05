@@ -5,7 +5,7 @@
   width: 18px;
   top: 0.5rem;
   right: 0.5rem;
-  cursor: ;
+  cursor: pointer;
 }
 .trash__button {
   background: url(./../../img/trash-icon.svg) no-repeat center / contain;
@@ -15,4 +15,15 @@
   top: 0.5rem;
   right: 2.5rem;
   cursor: pointer;
+}
+
+.product__addbtn {
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-family: var(--text-font);
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  width: fit-content;
 }
