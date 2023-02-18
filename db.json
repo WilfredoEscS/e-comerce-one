@@ -1,0 +1,22 @@
+{
+  "product": [
+    {
+      "name": "Play Station 5",
+      "imageURL": "./assets/img/products/consoles/ps5.png",
+      "price": "500.00",
+      "id": "",
+      "alt": "Product",
+      "section": "Consolas",
+      "description": ""
+    },
+    {
+      "name": "",
+      "imageURL": "",
+      "price": "",
+      "id": "",
+      "alt": "",
+      "section": "",
+      "description": ""
+    }
+  ]
+}
