@@ -19,10 +19,11 @@ const newProduct = (name, price, imageURL, id) => {
   productName.classList.add("product__description");
   productPrice.classList.add("product__price");
   trashBtn.classList.add("trash__button");
+  productId.classList.add("product__code");
 
   productName.innerHTML = name;
   productPrice.innerHTML = price;
-  productId.innerHTML = id;
+  productId.innerHTML = "#" + id;
 
   card.appendChild(editBtn);
   card.appendChild(trashBtn);

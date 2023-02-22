@@ -4,7 +4,7 @@
       "name": "Producto XYZ",
       "imageURL": "./assets/img/products/starwars/starwars-1.png",
       "price": "$ 60.00",
-      "id": "",
+      "id": "b13fb254",
       "alt": "Product",
       "section": "Star Wars",
       "description": ""
@@ -13,7 +13,7 @@
       "name": "Producto XYZ",
       "imageURL": "./assets/img/products/starwars/starwars-2.png",
       "price": "$ 60.00",
-      "id": "",
+      "id": "822f0bf5",
       "alt": "",
       "section": "Star Wars",
       "description": ""
@@ -22,7 +22,7 @@
       "name": "Producto XYZ",
       "imageURL": "./assets/img/products/starwars/starwars-3.png",
       "price": "$ 60.00",
-      "id": "",
+      "id": "2c9e06f0",
       "alt": "",
       "section": "Star Wars",
       "description": ""
@@ -31,7 +31,7 @@
       "name": "Producto XYZ",
       "imageURL": "./assets/img/products/starwars/starwars-4.png",
       "price": "$ 60.00",
-      "id": "",
+      "id": "d51f9ec6",
       "alt": "",
       "section": "Star Wars",
       "description": ""
@@ -40,7 +40,7 @@
       "name": "Producto XYZ",
       "imageURL": "./assets/img/products/starwars/starwars-5.png",
       "price": "$ 60.00",
-      "id": "",
+      "id": "0da7db36",
       "alt": "",
       "section": "Star Wars",
       "description": ""
@@ -49,7 +49,7 @@
       "name": "Producto XYZ",
       "imageURL": "./assets/img/products/starwars/starwars-6.png",
       "price": "$ 60.00",
-      "id": "",
+      "id": "ab8271da",
       "alt": "",
       "section": "Star Wars",
       "description": ""
@@ -59,7 +59,7 @@
       "name": "Control de XBOX",
       "imageURL": "./assets/img/products/consoles/xbox-control.png",
       "price": "$ 50.00",
-      "id": "",
+      "id": "0fa86691",
       "alt": "",
       "section": "Consolas",
       "description": ""
@@ -69,7 +69,7 @@
       "name": "Play Station 5",
       "imageURL": "./assets/img/products/consoles/ps5.png",
       "price": "$ 500.00",
-      "id": "",
+      "id": "f7ede781",
       "alt": "",
       "section": "Consolas",
       "description": ""
@@ -79,7 +79,7 @@
       "name": "Nintendo NES Classic Mini",
       "imageURL": "./assets/img/products/consoles/nes-mini.png",
       "price": "$ 200.00",
-      "id": "",
+      "id": "41c1b82a",
       "alt": "",
       "section": "Consolas",
       "description": ""
@@ -89,7 +89,7 @@
       "name": "Nintendo Joy-Con",
       "imageURL": "./assets/img/products/consoles/swich-control.png",
       "price": "$ 70.00",
-      "id": "",
+      "id": "6a2f814e",
       "alt": "",
       "section": "Consolas",
       "description": ""
@@ -99,7 +99,7 @@
       "name": "XBOX Series X",
       "imageURL": "./assets/img/products/consoles/xbox.png",
       "price": "$ 50  0.00",
-      "id": "",
+      "id": "78b11c27",
       "alt": "",
       "section": "Consolas",
       "description": ""
@@ -109,7 +109,7 @@
       "name": "Game Boy Color",
       "imageURL": "./assets/img/products/consoles/gameboy-color.png",
       "price": "$ 75.00",
-      "id": "",
+      "id": "9393028d",
       "alt": "",
       "section": "Consolas",
       "description": ""
@@ -118,7 +118,7 @@
       "name": "Camisa de Atari",
       "imageURL": "./assets/img/products/various/atari-shirt.png",
       "price": "$ 30.00",
-      "id": "",
+      "id": "af9cd872",
       "alt": "",
       "section": "Diversos",
       "description": ""
@@ -127,7 +127,7 @@
       "name": "Camisa de NES",
       "imageURL": "./assets/img/products/various/nes-shirt.png",
       "price": "$ 30.00",
-      "id": "",
+      "id": "2ac1b5d5",
       "alt": "",
       "section": "Diversos",
       "description": ""
@@ -136,7 +136,7 @@
       "name": "Radio",
       "imageURL": "./assets/img/products/various/radio.png",
       "price": "$ 60.00",
-      "id": "",
+      "id": "5d9c1921",
       "alt": "",
       "section": "Diversos",
       "description": ""
@@ -145,7 +145,7 @@
       "name": "Figura de Sonic",
       "imageURL": "./assets/img/products/various/sonic-figure.png",
       "price": "$ 60.00",
-      "id": "",
+      "id": "a2d996cd",
       "alt": "",
       "section": "Diversos",
       "description": ""
@@ -154,7 +154,7 @@
       "name": "Gafas de realidad virtual",
       "imageURL": "./assets/img/products/various/vr-goggles.png",
       "price": "$ 500.00",
-      "id": "",
+      "id": "03ee1bbd",
       "alt": "",
       "section": "Diversos",
       "description": ""
@@ -163,7 +163,7 @@
       "name": "Peluche de pikachu",
       "imageURL": "./assets/img/products/various/pikachu-plush.png",
       "price": "$ 20.00",
-      "id": "",
+      "id": "94303ec2",
       "alt": "",
       "section": "Diversos",
       "description": ""
