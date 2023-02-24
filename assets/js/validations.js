@@ -16,6 +16,15 @@ const errorMessages = {
     valueMissing: "El mensaje no puede estar vacío",
     customError: "El mensaje no debe exceder los 120 caracteres",
   },
+
+  email: {
+    valueMissing: "Ingrese una direccion de correo electrónico",
+    typeMismatch: "La direccion de correo electronico no es válida",
+  },
+
+  password: {
+    valueMissing: "Ingrese su contraseña",
+  },
 };
 
 inputs.forEach((input) => {
