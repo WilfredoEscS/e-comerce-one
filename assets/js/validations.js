@@ -25,18 +25,25 @@ export const validate = (input) => {
   // Getting the data-type attribute from the input element.
 
   const inputType = input.dataset.type;
+  const label = input.parentElement.querySelector(".form__label");
+  const boxMessage = input.parentElement.querySelector(".form__errorMessage");
 
   // Checking if the input is valid or not.
   if (input.validity.valid) {
     //If it is valid, it will remove the error message.
-    const boxMessage = input.parentElement.querySelector(".form__errorMessage");
+
     boxMessage.classList.remove("form__errorMessage--active");
+    input.classList.remove("form__input--invalid");
+    label.classList.remove("form__label--invalid");
+
     boxMessage.innerHTML = "";
   } else {
     //If it is not valid, it will show the error message.
-    const boxMessage = input.parentElement.querySelector(".form__errorMessage");
 
     boxMessage.classList.add("form__errorMessage--active");
+    input.classList.add("form__input--invalid");
+    label.classList.add("form__label--invalid");
+
     boxMessage.innerHTML = showErrorMessage(inputType, input);
   }
 };

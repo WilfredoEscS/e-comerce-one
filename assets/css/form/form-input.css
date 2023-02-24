@@ -2,7 +2,7 @@
   background-color: #fff;
   border-radius: 5px;
   border: none;
-  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
   color: var(--text-color);
   font-family: var(--text-font);
   outline: none;
@@ -11,9 +11,14 @@
   width: calc(100% - 3rem);
 }
 
+.form__input--invalid {
+  border: 1px solid var(--invalid-color);
+  color: var(--invalid-color);
+}
+
 .form__input:focus + .form__label,
 .form__input:valid + .form__label {
   font-size: 0.75rem;
-  top: 0rem;
+  top: 0.1rem;
   transition: all 0.5s;
 }

@@ -10,3 +10,7 @@
   transition: all 0.5s;
   width: calc(100% - 3rem);
 }
+
+.form__label--invalid {
+  color: var(--invalid-color);
+}

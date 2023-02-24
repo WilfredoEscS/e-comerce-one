@@ -1,0 +1,10 @@
+.form__errorMessage {
+  display: none;
+  font-family: var(--text-font);
+  padding: 0.25rem;
+}
+.form__errorMessage--active {
+  display: flex;
+  padding-left: 0.5rem;
+  color: #ff6868;
+}
