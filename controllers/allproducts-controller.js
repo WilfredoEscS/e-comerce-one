@@ -1,4 +1,5 @@
 import { productServices } from "./../services/product-services.js";
+import { validate } from "../assets/js/validations.js";
 
 const newProduct = (name, price, imageURL, id) => {
   const card = document.createElement("div");

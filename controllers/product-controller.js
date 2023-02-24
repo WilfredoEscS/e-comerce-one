@@ -1,4 +1,5 @@
 import { productServices } from "./../services/product-services.js";
+import { validate } from "../assets/js/validations.js";
 
 const newSection = (sectionName) => {
   const section = document.createElement("article");
@@ -29,7 +30,7 @@ const newProduct = (name, price, imageURL) => {
   productPrice.classList.add("product__price");
 
   link.classList.add("link");
-  link.setAttribute("href","#")
+  link.setAttribute("href", "#");
 
   productName.innerHTML = name;
   productPrice.innerHTML = price;
