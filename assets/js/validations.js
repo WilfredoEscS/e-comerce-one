@@ -12,6 +12,10 @@ const errorMessages = {
     valueMissing: "El campo de nombre no puede estar vacío",
     patternMismatch: "El nombre no debe exceder los 40 caracteres",
   },
+  message: {
+    valueMissing: "El mensaje no puede estar vacío",
+    customError: "El mensaje no debe exceder los 120 caracteres",
+  },
 };
 
 inputs.forEach((input) => {
@@ -21,12 +25,20 @@ inputs.forEach((input) => {
   });
 });
 
-export const validate = (input) => {
-  // Getting the data-type attribute from the input element.
+const validators = {
+  message: (input) => validateMessage(input),
+};
 
+const validate = (input) => {
   const inputType = input.dataset.type;
   const label = input.parentElement.querySelector(".form__label");
   const boxMessage = input.parentElement.querySelector(".form__errorMessage");
+
+  if (validators[inputType]) {
+    validators[inputType](input);
+  }
+
+  // Getting the data-type attribute from the input element.
 
   // Checking if the input is valid or not.
   if (input.validity.valid) {
@@ -58,7 +70,17 @@ const showErrorMessage = (inputType, input) => {
   errorTypes.forEach((error) => {
     if (input.validity[error]) {
       message = errorMessages[inputType][error];
+      console.log(message);
     }
   });
   return message;
+};
+
+const validateMessage = (input) => {
+  const lengthMessage = input.value.length;
+  let message = "";
+  if (lengthMessage > 120) {
+    message = "El mensaje no debe exceder los 120 caracteres";
+  }
+  input.setCustomValidity(message);
 };

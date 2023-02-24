@@ -64,13 +64,14 @@
                 <form action="" class="form">
                     <h3 class="form__title">Hable con nosotros</h3>
                     <div class="form__field">
-                        <input type="text" name="name" id="name" class="form__input" pattern="[a-zA-Z ]{1,40}" required
+                        <input type="text" name="name" id="name" class="form__input" pattern="[\w\s\S]{1,40}" required
                             data-type="name">
                         <label class="form__label" for="name">Nombre</label>
                         <span class="form__errorMessage"></span>
                     </div>
                     <div class="form__field">
-                        <textarea name="message" id="" cols="30" rows="3" class="form__input" required></textarea>
+                        <textarea type="text" name="message" id="" cols="30" rows="3" class="form__input" required
+                            data-type="message"></textarea>
                         <label class="form__label" for="message">Escribe tu mensaje</label>
                         <span class="form__errorMessage"></span>
                     </div>
@@ -83,6 +84,7 @@
         </div>
     </footer>
     <script type="module" src="./controllers/product-controller.js"></script>
+    <script src="./assets/js/validations.js"></script>
 </body>
 
 </html>

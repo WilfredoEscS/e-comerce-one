@@ -1,5 +1,4 @@
 import { productServices } from "./../services/product-services.js";
-import { validate } from "../assets/js/validations.js";
 
 const newSection = (sectionName) => {
   const section = document.createElement("article");
