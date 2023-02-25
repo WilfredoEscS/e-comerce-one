@@ -38,7 +38,7 @@ const validators = {
   message: (input) => validateMessage(input),
 };
 
-const validate = (input) => {
+export const validate = (input) => {
   const inputType = input.dataset.type;
   const label = input.parentElement.querySelector(".form__label");
   const boxMessage = input.parentElement.querySelector(".form__errorMessage");
