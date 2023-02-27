@@ -168,5 +168,18 @@
       "section": "Diversos",
       "description": ""
     }
+  ],
+
+  "users": [
+    {
+      "name": "administrator",
+      "email": "admin3257@alurageek.com",
+      "password": "admin3257"
+    },
+    {
+      "name": "user",
+      "email": "user3265@alurageek.com",
+      "password": "user3265"
+    }
   ]
 }
