@@ -55,3 +55,11 @@ if (form) {
   const fields = ["email", "password"];
   const validator = new Login(form, fields);
 }
+
+if (
+  window.location.pathname == "/login.html" &&
+  localStorage.getItem("auth") == 1
+) {
+  alert("Sesion ya iniciada, sera redirigido al menu administrador");
+  window.location.replace("../../products.html");
+}
