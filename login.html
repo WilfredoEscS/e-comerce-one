@@ -37,15 +37,17 @@
         <section class="login">
             <div class="login__box">
 
-                <form action="" class="form ">
+                <form action="" class="form " data-loginForm>
                     <h3 class="form__title form__title--centered">Iniciar sesion</h3>
                     <div class="form__field">
-                        <input type="text" name="name" id="" class="form__input" required>
-                        <label for="name" class="form__label">Nombre</label>
+                        <input type="email" name="email" class="form__input" required data-type="email">
+                        <label class="form__label">Nombre</label>
+                        <span class="form__errorMessage"></span>
                     </div>
                     <div class="form__field">
-                        <input type="password" name="" id="" class="form__input" required>
-                        <label for="" class="form__label">Contraseña</label>
+                        <input type="password" class="form__input" required data-type="password">
+                        <label class="form__label">Contraseña</label>
+                        <span class="form__errorMessage"></span>
                     </div>
                     <input type="submit" value="Entrar" class="form__sendbtn form__sendbtn--long">
                 </form>
@@ -69,15 +71,18 @@
                 <form action="" class="form">
                     <h3 class="form__title">Hable con nosotros</h3>
                     <div class="form__field">
-                        <input type="text" name="name" id="" class="form__input" required>
+                        <input type="text" name="name" id="name" class="form__input" pattern="[\w\s\S]{1,40}" required
+                            data-type="name">
                         <label class="form__label" for="name">Nombre</label>
+                        <span class="form__errorMessage"></span>
                     </div>
                     <div class="form__field">
-                        <textarea name="message" id="" cols="30" rows="3" class="form__input" required></textarea>
+                        <textarea type="text" name="message" id="" cols="30" rows="3" class="form__input" required
+                            data-type="message"></textarea>
                         <label class="form__label" for="message">Escribe tu mensaje</label>
-
+                        <span class="form__errorMessage"></span>
                     </div>
-                    <input type="submit" value="Enviar Mensaje" class="form__sendbtn">
+                    <input type="submit" value="Enviar Mensaje" class="form__sendbtn" data-loginBtn>
                 </form>
             </div>
         </div>
@@ -86,6 +91,8 @@
         </div>
     </footer>
 
+    <script type="module" src="./assets/js/validations.js"></script>
+    <script type="module" src="./assets/js/login.js"></script>
 </body>
 
 </html>
