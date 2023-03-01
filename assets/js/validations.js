@@ -93,3 +93,12 @@ const validateMessage = (input) => {
   }
   input.setCustomValidity(message);
 };
+
+const validateDescription = (input) => {
+  const length = input.value.length;
+  let message = "";
+  if (length > 150) {
+    message = "El mensaje no debe exceder los 150 caracteres";
+  }
+  input.setCustomValidity(message);
+};
