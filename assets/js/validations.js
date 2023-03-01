@@ -18,8 +18,8 @@ const errorMessages = {
   },
 
   email: {
-    valueMissing: "Ingrese una direccion de correo electrónico",
-    typeMismatch: "La direccion de correo electronico no es válida",
+    valueMissing: "Ingrese una dirección de correo electrónico",
+    typeMismatch: "La dirección de correo electrónico no es válida",
   },
 
   password: {
@@ -47,8 +47,8 @@ const errorMessages = {
   },
 
   productdescription: {
-    valueMissing: "Ingrese la descripcion del producto",
-    customError: "La descripcion debe tener un máximo de 150 caracteres",
+    valueMissing: "Ingrese la descripción del producto",
+    customError: "La descripción debe tener un máximo de 150 caracteres",
   },
 };
 
