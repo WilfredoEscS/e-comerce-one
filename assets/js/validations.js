@@ -26,9 +26,19 @@ const errorMessages = {
     valueMissing: "Ingrese su contraseña",
   },
 
+  imageurl: {
+    valueMissing: "Ingrese la URL de la imagen",
+  },
+
   productname: {
     valueMissing: "Ingrese el nombre del producto",
     patternMismatch: "El nombre del producto no debe exceder los 20 caracteres",
+  },
+
+  productcategory: {
+    valueMissing: "Ingrese la categoría a la que pertenece el producto",
+    patternMismatch:
+      "La categoría del producto no debe exceder los 20 caracteres",
   },
 
   productprice: {
