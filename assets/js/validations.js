@@ -18,12 +18,37 @@ const errorMessages = {
   },
 
   email: {
-    valueMissing: "Ingrese una direccion de correo electrónico",
-    typeMismatch: "La direccion de correo electronico no es válida",
+    valueMissing: "Ingrese una dirección de correo electrónico",
+    typeMismatch: "La dirección de correo electrónico no es válida",
   },
 
   password: {
     valueMissing: "Ingrese su contraseña",
+  },
+
+  imageurl: {
+    valueMissing: "Ingrese la URL de la imagen",
+  },
+
+  productname: {
+    valueMissing: "Ingrese el nombre del producto",
+    patternMismatch: "El nombre del producto no debe exceder los 20 caracteres",
+  },
+
+  productcategory: {
+    valueMissing: "Ingrese la categoría a la que pertenece el producto",
+    patternMismatch:
+      "La categoría del producto no debe exceder los 20 caracteres",
+  },
+
+  productprice: {
+    valueMissing: "Ingrese el precio del producto",
+    patternMismatch: "El precio debe representarse en números",
+  },
+
+  productdescription: {
+    valueMissing: "Ingrese la descripción del producto",
+    customError: "La descripción debe tener un máximo de 150 caracteres",
   },
 };
 
@@ -36,6 +61,7 @@ inputs.forEach((input) => {
 
 const validators = {
   message: (input) => validateMessage(input),
+  productdescription: (input) => validateDescription(input),
 };
 
 export const validate = (input) => {
@@ -90,6 +116,15 @@ const validateMessage = (input) => {
   let message = "";
   if (lengthMessage > 120) {
     message = "El mensaje no debe exceder los 120 caracteres";
+  }
+  input.setCustomValidity(message);
+};
+
+const validateDescription = (input) => {
+  const length = input.value.length;
+  let message = "";
+  if (length > 150) {
+    message = "El mensaje no debe exceder los 150 caracteres";
   }
   input.setCustomValidity(message);
 };

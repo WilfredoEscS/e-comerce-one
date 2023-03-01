@@ -41,24 +41,33 @@
                         <h1 class="form__title form__title--big">Agregar nuevo producto</h1>
                     </legend>
                     <div class="form__field">
-                        <input type="url" name="" id="" class="form__input" required>
-                        <label for="" class="form__label">URL de la imagen</label>
+                        <input type="url" name="" id="" class="form__input" required data-type="imageurl">
+                        <label for="" class=" form__label">URL de la imagen</label>
+                        <span class="form__errorMessage"></span>
                     </div>
                     <div class="form__field">
-                        <input type="text" name="" id="" class="form__input" required>
+                        <input type="text" name="" id="" class="form__input" required data-type="productcategory"
+                            pattern="[\w\s\S]{1,20}">
                         <label for="" class="form__label">Categoria</label>
+                        <span class="form__errorMessage"></span>
                     </div>
                     <div class="form__field">
-                        <input type="text" name="" id="" class="form__input" required>
+                        <input type="text" name="" id="" class="form__input" required data-type="productname"
+                            pattern="[\w\s\S]{1,20}">
                         <label for="" class="form__label">Nombre del producto</label>
+                        <span class="form__errorMessage"></span>
                     </div>
                     <div class="form__field">
-                        <input type="text" name="" id="" class="form__input" required>
+                        <input type="text" name="" id="" class="form__input" required data-type="productprice"
+                            pattern="[0-9.]{1,6}">
                         <label for="" class="form__label">Precio de producto</label>
+                        <span class="form__errorMessage"></span>
                     </div>
                     <div class="form__field">
-                        <textarea name="" id="" cols="30" rows="3" class="form__input" required></textarea>
+                        <textarea cols="30" rows="3" class="form__input" required
+                            data-type="productdescription"></textarea>
                         <label for="" class="form__label">Descripción del producto</label>
+                        <span class="form__errorMessage"></span>
                     </div>
                     <input type="submit" value="Agregar producto" class="form__sendbtn form__sendbtn--long">
                 </form>
