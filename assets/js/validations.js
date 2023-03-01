@@ -25,6 +25,21 @@ const errorMessages = {
   password: {
     valueMissing: "Ingrese su contraseña",
   },
+
+  productname: {
+    valueMissing: "Ingrese el nombre del producto",
+    patternMismatch: "El nombre del producto no debe exceder los 20 caracteres",
+  },
+
+  productprice: {
+    valueMissing: "Ingrese el precio del producto",
+    patternMismatch: "El precio debe representarse en números",
+  },
+
+  productdescription: {
+    valueMissing: "Ingrese la descripcion del producto",
+    customError: "La descripcion debe tener un máximo de 150 caracteres",
+  },
 };
 
 inputs.forEach((input) => {
@@ -36,6 +51,7 @@ inputs.forEach((input) => {
 
 const validators = {
   message: (input) => validateMessage(input),
+  productdescription: (input) => validateDescription(input),
 };
 
 export const validate = (input) => {
