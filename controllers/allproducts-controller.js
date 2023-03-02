@@ -1,6 +1,10 @@
 import { productServices } from "./../services/product-services.js";
 import { validate } from "../assets/js/validations.js";
 
+const products = document.querySelector("[data-allproducts]");
+const searchInput = document.querySelector("[data-searchinput]");
+const searchBar = document.querySelector("[data-searchbar]");
+
 const newProduct = (name, price, imageURL, id) => {
   const card = document.createElement("div");
   const editBtn = document.createElement("div");
@@ -36,14 +40,13 @@ const newProduct = (name, price, imageURL, id) => {
   return card;
 };
 
-const product = document.querySelector("[data-allproducts]");
-
 const render = async () => {
   try {
     const productList = await productServices.productList();
+    const url = new URL
 
     productList.forEach((element) => {
-      product.appendChild(
+      products.appendChild(
         newProduct(element.name, element.price, element.imageURL, element.id)
       );
     });
@@ -51,5 +54,10 @@ const render = async () => {
     console.log(error);
   }
 };
+
+searchBar.addEventListener("submit", (event) => {
+  event.preventDefault();
+  window.location.href = `./products.html?search=${searchInput.value}`;
+});
 
 render();
