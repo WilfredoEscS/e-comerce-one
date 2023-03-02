@@ -2,8 +2,6 @@ import { productServices } from "./../services/product-services.js";
 import { validate } from "../assets/js/validations.js";
 
 const products = document.querySelector("[data-allproducts]");
-const searchInput = document.querySelector("[data-searchinput]");
-const searchBar = document.querySelector("[data-searchbar]");
 
 const newProduct = (name, price, imageURL, id) => {
   const card = document.createElement("div");
@@ -67,11 +65,5 @@ const render = async () => {
     console.log(error);
   }
 };
-
-searchBar.addEventListener("submit", (event) => {
-  event.preventDefault();
-  // Changing the url of the page to the one that is being passed as a parameter.
-  window.location.href = `./products.html?search=${searchInput.value}`;
-});
 
 render();
