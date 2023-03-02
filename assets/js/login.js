@@ -1,4 +1,5 @@
 import { userServices } from "../../services/user-services.js";
+import { validate } from "./validations.js";
 
 class Login {
   constructor(form, fields) {
