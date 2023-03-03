@@ -1,6 +1,8 @@
 import { productServices } from "./../services/product-services.js";
 import { validate } from "../assets/js/validations.js";
 
+const products = document.querySelector("[data-allproducts]");
+
 const newProduct = (name, price, imageURL, id) => {
   const card = document.createElement("div");
   const editBtn = document.createElement("div");
@@ -36,16 +38,28 @@ const newProduct = (name, price, imageURL, id) => {
   return card;
 };
 
-const product = document.querySelector("[data-allproducts]");
-
 const render = async () => {
   try {
     const productList = await productServices.productList();
-
+    const url = new URL(window.location);
+    const searchFilter = url.searchParams.get("search");
+    console.log(searchFilter);
     productList.forEach((element) => {
-      product.appendChild(
-        newProduct(element.name, element.price, element.imageURL, element.id)
-      );
+      if (searchFilter == null) {
+        /* Appending the new product to the products div. */
+        products.appendChild(
+          newProduct(element.name, element.price, element.imageURL, element.id)
+        );
+      } else if (
+        // Filtering the products by name, section and id.
+        element.name.toLocaleLowerCase().includes(searchFilter.toLowerCase()) ||
+        element.section.toLowerCase().includes(searchFilter.toLowerCase()) ||
+        element.id.toLowerCase().includes(searchFilter.toLowerCase())
+      ) {
+        products.appendChild(
+          newProduct(element.name, element.price, element.imageURL, element.id)
+        );
+      }
     });
   } catch (error) {
     console.log(error);

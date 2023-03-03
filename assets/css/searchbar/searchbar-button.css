@@ -1,4 +1,5 @@
 .searchbar__button {
+  border: none;
   height: 18px;
   width: 18px;
   background: url(./../../img/search-icon.svg) no-repeat center / cover;

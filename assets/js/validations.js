@@ -1,4 +1,6 @@
 const inputs = document.querySelectorAll("input, textarea");
+const searchInput = document.querySelector("[data-searchinput]");
+const searchBar = document.querySelector("[data-searchbar]");
 
 const errorTypes = [
   "valueMissing",
@@ -57,6 +59,12 @@ inputs.forEach((input) => {
   input.addEventListener("blur", (input) => {
     validate(input.target);
   });
+});
+
+searchBar.addEventListener("submit", (event) => {
+  event.preventDefault();
+  // Changing the url of the page to the one that is being passed as a parameter.
+  window.location.href = `./products.html?search=${searchInput.value}`;
 });
 
 const validators = {
