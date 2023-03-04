@@ -43,10 +43,9 @@ const render = async () => {
     const productList = await productServices.productList();
     const url = new URL(window.location);
     const searchFilter = url.searchParams.get("search");
-    console.log(searchFilter);
     productList.forEach((element) => {
       if (searchFilter == null) {
-        /* Appending the new product to the products div. */
+        // Appending the new product to the products section
         products.appendChild(
           newProduct(element.name, element.price, element.imageURL, element.id)
         );

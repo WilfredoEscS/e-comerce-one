@@ -10,7 +10,31 @@ const sectionList = async () => {
   return await response.json();
 };
 
+const addProduct = async (section, description, name, price, imageURL, id) => {
+  try {
+/* Sending a POST request to the server. */
+    return await fetch("http://localhost:3000/products", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+
+      body: JSON.stringify({
+        name,
+        imageURL,
+        price: `$ ${price}`,
+        id,
+        section,
+        description,
+      }),
+    });
+  } catch (error) {
+    console.log(error);
+  }
+};
+
 export const productServices = {
   productList,
   sectionList,
+  addProduct,
 };

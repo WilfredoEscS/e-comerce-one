@@ -37,7 +37,7 @@
     <main class="container">
         <section class="new-product">
             <article class="newproduct__box">
-                <form action="" class="form">
+                <form class="form" data-type="addproduct">
                     <legend>
                         <h1 class="form__title form__title--big">Agregar nuevo producto</h1>
                     </legend>
@@ -49,7 +49,7 @@
                     <div class="form__field">
                         <input type="text" name="" id="" class="form__input" required data-type="productcategory"
                             pattern="[\w\s\S]{1,20}">
-                        <label for="" class="form__label">Categoria</label>
+                        <label for="" class="form__label">Categoría</label>
                         <span class="form__errorMessage"></span>
                     </div>
                     <div class="form__field">
@@ -112,7 +112,10 @@
         </div>
     </footer>
 
-    <script type="module" src="./assets/js/validations.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+        integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="./controllers/newproduct-controller.js"></script>
 </body>
 
 </html>
