@@ -17,4 +17,20 @@ addProductForm.addEventListener("submit", async (event) => {
   const price = document.querySelector(`[data-type="productprice"]`).value;
   const urlImage = document.querySelector(`[data-type="imageurl"]`).value;
   const id = uuid.v4().toString();
+
+  try {
+    // Calling the addProduct function from productServices
+    await productServices.addProduct(
+      category,
+      description,
+      name,
+      price,
+      urlImage,
+      id.slice(0, 8)
+    );
+    // Redirecting the user to the products.html page
+    window.location.replace("./products.html");
+  } catch (error) {
+    console.log(error);
+  }
 });
