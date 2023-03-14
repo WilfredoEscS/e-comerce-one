@@ -33,8 +33,26 @@ const addProduct = async (section, description, name, price, imageURL, id) => {
   }
 };
 
+/**
+ * It takes in an id, and returns a fetch request to the server to delete the product with that id
+ * @param id - The id of the product to be deleted.
+ * @returns The response from the server.
+ */
+const delProduct = async (id) => {
+  try {
+    return await fetch(`http://localhost:3000/products/${id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+  } catch (error) {
+    console.log(error);
+  }
+};
 export const productServices = {
   productList,
   sectionList,
   addProduct,
+  delProduct,
 };
