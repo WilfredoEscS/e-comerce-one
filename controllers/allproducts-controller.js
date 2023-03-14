@@ -38,6 +38,7 @@ const newProduct = (name, price, imageURL, id) => {
   card.appendChild(productPrice);
   card.appendChild(productId);
 
+  const editButton = card.querySelector("[data-edit]");
   const delButton = card.querySelector("[data-trash]");
 
   /*
