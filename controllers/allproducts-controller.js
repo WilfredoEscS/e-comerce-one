@@ -38,6 +38,17 @@ const newProduct = (name, price, imageURL, id) => {
   card.appendChild(productId);
 
   const delButton = card.querySelector("[data-trash]");
+
+  /*
+   * This is an event listener that is listening for a click event on the delete button. When the button
+   * is clicked, the event is triggered and the function is executed.
+   */
+  delButton.addEventListener("click", async (e) => {
+    e.preventDefault();
+    id = delButton.parentElement.lastChild.innerHTML.slice(1);
+    await productServices.delProduct(id);
+  });
+
   return card;
 };
 
