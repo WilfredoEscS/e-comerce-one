@@ -28,6 +28,8 @@ const newProduct = (name, price, imageURL, id) => {
   productPrice.innerHTML = price;
   productId.innerHTML = "#" + id;
 
+  trashBtn.setAttribute("data-trash", "");
+
   card.appendChild(editBtn);
   card.appendChild(trashBtn);
   card.appendChild(productImage);
