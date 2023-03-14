@@ -54,4 +54,5 @@ export const productServices = {
   productList,
   sectionList,
   addProduct,
+  delProduct,
 };
