@@ -28,6 +28,7 @@ const newProduct = (name, price, imageURL, id) => {
   productPrice.innerHTML = price;
   productId.innerHTML = "#" + id;
 
+  editBtn.setAttribute("data-edit", "");
   trashBtn.setAttribute("data-trash", "");
 
   card.appendChild(editBtn);
@@ -37,6 +38,7 @@ const newProduct = (name, price, imageURL, id) => {
   card.appendChild(productPrice);
   card.appendChild(productId);
 
+  const editButton = card.querySelector("[data-edit]");
   const delButton = card.querySelector("[data-trash]");
 
   /*
