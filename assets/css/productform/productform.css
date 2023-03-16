@@ -1,6 +1,6 @@
-@import url(./newproduct-box.css);
+@import url(./productform-box.css);
 
-.new-product {
+.productform {
   align-items: center;
   background-color: var(--main-bgcolor);
   display: flex;
