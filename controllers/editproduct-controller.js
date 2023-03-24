@@ -17,6 +17,35 @@ if (id == undefined) {
   window.location.replace("./products.html");
 }
 
+productForm.addEventListener("submit", async (event) => {
+  event.preventDefault();
+
+  const name = document.querySelector(`[data-type="productname"]`).value;
+  const imageURL = document.querySelector(`[data-type="imageurl"]`).value;
+  const price = document.querySelector(`[data-type="productprice"]`).value;
+  const category = document.querySelector(
+    `[data-type="productcategory"]`
+  ).value;
+  const description = document.querySelector(
+    `[data-type="productdescription"]`
+  ).value;
+
+  try {
+    // Calling the addProduct function from productServices
+    await productServices.updateProduct(
+      name,
+      imageURL,
+      price,
+      id,
+      category,
+      description
+    );
+    // Redirecting the user to the products.html page
+    window.location.replace("./products.html");
+  } catch (error) {
+    console.log(error);
+  }
+});
 
 export const editProduct = async (id) => {
   const productList = await productServices.productList();
