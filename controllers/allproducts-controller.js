@@ -51,6 +51,16 @@ const newProduct = (name, price, imageURL, id) => {
     await productServices.delProduct(id);
   });
 
+  /*
+   * Listen for a click event on the edit button. When the button
+   * is clicked, the event is triggered and the function is executed.
+   */
+  editButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    id = delButton.parentElement.lastChild.innerHTML.slice(1);
+    window.location.replace(`edit-product.html?id=${id}`);
+  });
+
   return card;
 };
 
