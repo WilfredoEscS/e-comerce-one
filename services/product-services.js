@@ -95,4 +95,5 @@ export const productServices = {
   sectionList,
   addProduct,
   delProduct,
+  updateProduct,
 };
