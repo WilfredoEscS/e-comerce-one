@@ -1,18 +1,37 @@
 //GET
 
+/**
+ * It fetches the products from the server and returns the response as JSON
+ * @returns An array of objects
+ */
 const productList = async () => {
   const response = await fetch("http://localhost:3000/products");
   return await response.json();
 };
 
+/**
+ * SectionList is a function that fetches the products from the server and returns the response as a
+ * JSON object.
+ * @returns An array of objects
+ */
 const sectionList = async () => {
   const response = await fetch("http://localhost:3000/products");
   return await response.json();
 };
 
+/**
+ * It sends a POST request to the server with the product's information
+ * @param section - The section of the product.
+ * @param description - The description of the product.
+ * @param name - The name of the product.
+ * @param price - The price of te product
+ * @param imageURL - The URL of the image.
+ * @param id - The id of the product.
+ * @returns The response from the server.
+ */
 const addProduct = async (section, description, name, price, imageURL, id) => {
   try {
-/* Sending a POST request to the server. */
+    // Sending a POST request to the server
     return await fetch("http://localhost:3000/products", {
       method: "POST",
       headers: {
