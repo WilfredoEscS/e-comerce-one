@@ -50,6 +50,46 @@ const delProduct = async (id) => {
     console.log(error);
   }
 };
+
+/**
+ * It takes in the name, imageURL, price, id, category, and description of a product and updates the
+ * product with the given id
+ * @param name - The name of the product
+ * @param imageURL - The URL of the image of the product.
+ * @param price - The price of the product 
+ * @param id - The id of the product you want to update.
+ * @param category - The category of the product.
+ * @param description - "This is a description of the product"
+ * @returns The response from the server.
+ */
+const updateProduct = async (
+  name,
+  imageURL,
+  price,
+  id,
+  category,
+  description
+) => {
+  try {
+    return await fetch(`http://localhost:3000/products/${id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+
+      body: JSON.stringify({
+        name,
+        imageURL,
+        price: `$ ${price}`,
+        id,
+        category,
+        description,
+      }),
+    });
+  } catch (error) {
+    console.log(error);
+  }
+};
 export const productServices = {
   productList,
   sectionList,
