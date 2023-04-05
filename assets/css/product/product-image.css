@@ -2,3 +2,10 @@
   width: 165px;
   height: fit-content;
 }
+
+/* Responsive design settings for tablets */
+@media screen and (max-width: 768px) {
+  .product__image {
+    width: calc((90vw - 60px) / 4);
+  }
+}

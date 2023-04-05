@@ -10,4 +10,14 @@
   gap: 0.5rem 0;
   width: 165px;
   position: relative;
+  width: 165px;
+}
+
+/* Responsive design settings for tablets */
+@media screen and (max-width: 768px) {
+  .product {
+    display: none;
+    width: calc((90vw - 60px) / 4);
+    display: none;
+  }
 }
