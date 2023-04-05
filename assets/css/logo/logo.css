@@ -1,4 +1,12 @@
 .alurageek__logo {
   height: fit-content;
-  width: fit-content;
+  width: auto;
+}
+
+/* Adjusts the page layout to tablets */
+@media screen and (max-width: 768px) {
+  .alurageek__logo {
+    height: 2.25rem;
+    width: auto;
+  }
 }
