@@ -6,5 +6,12 @@
   font-weight: 700;
   height: 80%;
   justify-content: end;
-  width: 80vw;
+  width: var(--width-content-desktop);
+}
+
+/* Adjusts the page layout to tablets */
+@media screen and (max-width: 768px) {
+  .banner__box {
+    width: var(--width-content-mobile);
+  }
 }
