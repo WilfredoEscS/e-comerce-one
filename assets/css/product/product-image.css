@@ -1,6 +1,13 @@
 .product__image {
-  width: 165px;
   height: fit-content;
+  width: calc((var(--width-content-desktop) - 100px) / 6);
+}
+
+/* Responsive design settings for smaller monitors */
+@media screen and (max-width: 1000px) {
+  .product__image {
+    width: calc((var(--width-content-desktop) - 40px) / 3);
+  }
 }
 
 /* Responsive design settings for tablets */
