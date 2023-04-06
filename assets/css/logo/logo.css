@@ -1,4 +1,5 @@
-.alurageek__logo {
+.alurageek__logo,
+.alurageek__logo__footer {
   height: fit-content;
   width: auto;
 }
@@ -8,5 +9,10 @@
   .alurageek__logo {
     height: 2.25rem;
     width: auto;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .alurageek__logo__footer {
+    grid-area: logo;
   }
 }

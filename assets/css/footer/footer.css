@@ -1,6 +1,7 @@
 @import url(./footer-box.css);
 @import url(./footer-contactus.css);
 @import url(./footer-dev-info.css);
+@import url(./footer-navigation.css);
 
 .footer {
   align-items: center;

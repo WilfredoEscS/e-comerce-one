@@ -1,3 +1,10 @@
 .footer__contactus {
   width: 50%;
 }
+/* Responsive design settings for tablets */
+@media screen and (max-width: 1000px) {
+  .footer__contactus {
+    width: 100%;
+    grid-area: contactform;
+  }
+}
