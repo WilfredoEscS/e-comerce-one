@@ -1,6 +1,23 @@
 .footer__box {
   display: flex;
-  width: 80%;
+  width: var(--width-content-desktop);
   justify-content: space-between;
   padding: 3rem 0;
+}
+
+/* Responsive design settings for tablets */
+@media screen and (max-width: 768px) {
+  .footer__box {
+    width: var(--width-content-mobile);
+  }
+}
+@media screen and (max-width: 1000px) {
+  .footer__box {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "logo contactform"
+      "navlist contactform";
+  }
 }

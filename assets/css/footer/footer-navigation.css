@@ -1,0 +1,6 @@
+/* Responsive design settings for tablets */
+@media screen and (max-width: 1000px) {
+  .footer__navigation {
+    grid-area: navlist;
+  }
+}

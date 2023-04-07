@@ -5,6 +5,13 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px 20px;
-  width: 80%;
+  width: var(--width-content-desktop);
   margin: 3rem auto;
+}
+
+/* Adjusts the page layout to tablets */
+@media screen and (max-width: 768px) {
+  .section {
+    width: var(--width-content-mobile);
+  }
 }

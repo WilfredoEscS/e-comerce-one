@@ -5,3 +5,9 @@
   font-family: var(--text-font);
   text-decoration: none;
 }
+/* Adjusts the page layout to tablets */
+@media screen and (max-width: 768px) {
+  .header__loginbtn {
+    padding: 0.75rem 4rem;
+  }
+}

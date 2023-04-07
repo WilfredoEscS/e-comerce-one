@@ -1,4 +1,18 @@
-.alurageek__logo {
+.alurageek__logo,
+.alurageek__logo__footer {
   height: fit-content;
-  width: fit-content;
+  width: auto;
+}
+
+/* Adjusts the page layout to tablets */
+@media screen and (max-width: 768px) {
+  .alurageek__logo {
+    height: 2.25rem;
+    width: auto;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .alurageek__logo__footer {
+    grid-area: logo;
+  }
 }
